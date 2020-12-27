@@ -1,10 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Product = require("../models/product");
-var checkSessionAuth = require("../middlewares/checkSessionAuth");
-var validateProduct = require("../middlewares/validateProduct");
-var auth = require("../middlewares/auth");
-var admin = require("../middlewares/admin");
+
 /* GET home page. */
 
 router.get('/', async function (req, res, next) {
